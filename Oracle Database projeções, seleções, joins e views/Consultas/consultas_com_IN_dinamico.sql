@@ -1,0 +1,6 @@
+SELECT V.BAIRRO FROM VENDEDORES V;
+
+SELECT * FROM CLIENTES WHERE BAIRRO IN ('Tijuca', 'Jardins', 'Copacabana', 'Santo Amaro')
+
+Fazendo agora a mesma consula porém com o in dinamicoDe bDe 
+SELECT * FROM CLIENTES WHERE BAIRRO IN (SELECT BAIRRO FROM VENDEDORES)
